@@ -1,5 +1,6 @@
 Un calendrier des mesures et chiffres du covid
 
+
 Overview
 
 Pour éviter de perdre du temps, pour que personne n’ait à le refaire, j'ai rempli un calendrier sous forme d'un csv une ligne une date. Il a vocation à être accessible facilement et son mérite principal est sûrement de synthétiser la chronologie des restrictions liées au covid, qui est fusionnée aux stats de Our World in Data
