@@ -31,7 +31,7 @@ def action_gouv_calendar_builder(path_file):
 def epidemic_stats(url):
     df_epidemic_stats = pd.read_csv(url, header=0, sep=',')
     df_epidemic_stats = df_epidemic_stats[df_epidemic_stats['location']=='France']
-    df_epidemic_stats = df_epidemic_stats[['date', 'people_fully_vaccinated',  
+    df_epidemic_stats = df_epidemic_stats[['date',  
     'total_cases', 'new_cases', 'total_deaths', 'new_deaths', 'icu_patients', 
     'positive_rate', 'people_fully_vaccinated', 'median_age']]
     df_epidemic_stats['date'] = df_epidemic_stats['date']\
@@ -39,7 +39,7 @@ def epidemic_stats(url):
     return df_epidemic_stats
 
 if __name__ == "__main__":
-    path = 'chronologie_covid/' 
+    path = 'chronologie_covid/'
     file = 'covid_chronologie.csv'
     covid_calendar = action_gouv_calendar_builder(path + file)
     url = 'https://covid.ourworldindata.org/data/owid-covid-data.csv'
